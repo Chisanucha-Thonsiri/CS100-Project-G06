@@ -1,10 +1,13 @@
-@media only screen and (min-width: 769px) and (max-width: 768px){
+@media only screen and (min-width: 769px) and (max-width: 820px){
+    html{
+        overflow: scroll;
+    }
     html,body{
-        width:100%;
+        width:820px;
         height:800px;
         margin:0;
         padding: 0;
-        overflow-x: hidden;
+        
     }
     body{
         background-image: url(https://i.pinimg.com/originals/56/3f/96/563f96258fc90a83b8926aae5c706006.gif);
