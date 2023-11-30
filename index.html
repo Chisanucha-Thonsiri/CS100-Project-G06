@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css\css4index\indexcss.css">
+<link rel="stylesheet" href="css\css4index\header.css">
+<link rel="stylesheet" href="vdmipadpro.css">
+<link rel="stylesheet" href="vdmipadgen.css">
+<link rel="stylesheet" href="vdmiphone.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mali">
+</head>
+<body>
+    <div class="mainmenu"><span class="mainmenuct"><img class="pic1"src="pic\TU-logo.png">
+        <h1 class="cstupp">OUR CSTU PASSPORT</h1>
+        <button class="bt1 selectedbt" onclick="showmem()"><strong>หน้าโฮมเพจ</strong></button>
+        <a href="html/myAdvisor.html" target="_self"><button class="bt2"><strong>สมาชิกทีม</strong></button></a>
+        <a href="html/myActivities.html" target="_self"><button class="bt3"><strong>กิจกรรมของฉัน</strong></button></a>
+        
+    </span>
+<div class="wrappermain" id="wrappermain">
+    
+  <div class="member" id="member">
+    <strong><p id="maintxt">สมาชิกทีมของเรา!</p></strong>
+    <div id="m1" class="menusl menu1" onclick="flipm1()" onmouseover="kramcolor()" onmouseleave="kramcolorout()">
+    </div>
+    <div  id="m2"class="menusl menu2" onclick="flipm2()" onmouseover="inkcolor()" onmouseleave="inkcolorout()"></div>
+    <div  id="m3"class="menusl menu3" onclick="flipm3()" onmouseover="notcolor()" onmouseleave="notcolorout()"></div>
+    <div id="ms1"class="menusl menus1" >
+        <h1>คราม</h1>
+        <div class="sub-info">
+       <strong> <h3>
+ชื่อจริง: <span class="bluetxt">ชิษณุชา ทนศิริ</span> <br>อายุ: <span class="bluetxt">18ปี</span><br>
+ชั้นปี: <span class="bluetxt">ปีที่ 1</span> </div>
+<div class="allbt">
+<div class="bt but1" onclick="topcp()"><i class="fa-solid fa-cart-shopping"></i></div>
+<div class="bt but2" onclick="flipm1close()"><i class="fa-solid fa-xmark"></i></div>
+</div>
+       </h3></strong>
+    </div>
+    <div id="ms2"class="menusl menus2" >
+        <h1>อิ้ง</h1>
+        <div class="sub-info">
+       <strong> <h3>
+ชื่อจริง: <span class="bluetxt">รอ</span> <br>อายุ: <span class="bluetxt">รอ</span><br>
+ชั้นปี: <span class="bluetxt">ปีที่ 1</span> </div>
+<div class="allbt">
+<div class="bt but1" onclick="topcp()"><i class="fa-solid fa-cart-shopping"></i></div>
+<div class="bt but2" onclick="flipm2close()"><i class="fa-solid fa-xmark"></i></div>
+</div>
+       </h3></strong>
+    </div>
+    <div id="ms3"class="menusl menus3" >
+        <h1>ต้นน้ำ</h1>
+        <div class="sub-info">
+       <strong> <h3>
+ชื่อจริง: <span class="bluetxt">รอ</span> <br>อายุ: <span class="bluetxt">รอ</span><br>
+ชั้นปี: <span class="bluetxt">ปีที่ 1</span> </div>
+<div class="allbt">
+<div class="bt but1" onclick="topcp()"><i class="fa-solid fa-cart-shopping"></i></div>
+<div class="bt but2" onclick="flipm3close()"><i class="fa-solid fa-xmark"></i></div>
+</div>
+       </h3></strong>
+    </div>
+    <div id="mp1"class="menusl pay1" onclick="tocook()">
+        <script src="https://cdn.lordicon.com/lordicon.js"></script>
+        <lord-icon
+            src="https://cdn.lordicon.com/zfmcashd.json"
+            trigger="loop"
+            delay="500"
+            state="in-reveal"
+            style="width:250px;height:250px">
+        </lord-icon>
+    </div></div>
+    <div class="welcome" id = "welcome">
+        <h1>WELCOME</h1>
+    <div id="clock"></div>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/lzgqzxrq.json"
+    trigger="loop"
+    style="width:60px;height:60px;position: relative;top:-2055px;left:420px;">
+    <div id="mp3" class="pmcheck"><strong>
+        <h1>กำลังตรวจสอบสถานะการจ่ายเงิน</h1>
+        <p >สถานะ:<p id="pmst">กำลังตรวจสอบ</p></p></strong>
+        <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
+        <lord-icon id="ic1"
+            src="https://cdn.lordicon.com/unukghxb.json"
+            trigger="loop"
+            delay="500"
+            style="width:150px;height:150px">
+        </lord-icon>
+    </div></div>
+    <div  id="mf1"class="menusl foodic">
+
+        <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
+<lord-icon id="ic2"
+    src="https://cdn.lordicon.com/mhddipcx.json"
+    trigger="loop"
+    delay="500"
+    style="width:150px;height:150px">
+</lord-icon>
+<h1 id="foodst" style="color: blue; font-size: 25px;">กำลังเตรียมวัตถุดิบ</h1>
+    </div>
+    <div id="fi1"class="foodinfo">
+    <img src="https://s.isanook.com/wo/0/ud/10/51845/3.jpg?ip/resize/w728/q80/jpg" alt="">
+    <h1>ข้าวผัดผักคลีน</h1>
+    <strong>
+    <p style="color: blue;">
+ข้าวผัดผักคลีนที่ลดไขมันจำนวนมหาศาลเหมาะกับผู้ที่<br>กำลังลดน้ำหนัก อิสลามก็ทานได้ ราคาย่อมเยาว์<br>
+ราคา:69บาท
+<div class="bt but4" onclick="closeinfo1()"><i class="fa-solid fa-xmark"></i></div>
+    </p></strong></div>
+
+
+
+    <div id="nofood"class="nofoodinfo">
+        <img src="Warningsign.png">
+        <h1 >ไม่มีสินค้าในขณะนี้</h1>
+        <strong>
+        <p style="color: blue;">
+    สินค้ายังไม่พร้อมให้บริการขณะนี้ แต่จะพร้อมให้บริการเร็วๆนี้ <br>ขออภัยในความไม่สะดวก
+    <div class="bt but5" onclick="closenofood()"><i class="fa-solid fa-xmark"></i></div>
+        </p></strong></div>
+        <button id="reload" class="reload"onClick="window.location.reload();"><strong>รับสินค้า</strong></button>
+    </div>
+</lord-icon>
+</div>
+</body>
+<script>
+    let mt = document.getElementById("maintxt");
+    let m1f = document.getElementById("m1");
+    let m2f = document.getElementById("m2");
+    let m3f = document.getElementById("m3");
+    let ms1f = document.getElementById("ms1");
+    let ms2f = document.getElementById("ms2");
+    let ms3f = document.getElementById("ms3");
+    let mp1 = document.getElementById("mp1");
+    let mp2 = document.getElementById("mp2");
+    let mp3 = document.getElementById("mp3");
+    let pmst = document.getElementById("pmst");
+    let ic1 = document.getElementById("ic1");
+    let ic2 = document.getElementById("ic2");
+    let mf1 = document.getElementById("mf1");
+    let foodst = document.getElementById("foodst");
+    let fi1 = document.getElementById("fi1");
+    let nofood = document.getElementById("nofood");
+    let reload = document.getElementById("reload");
+    let wrappercl = document.getElementById("wrappermain");
+    let member = document.getElementById("member");
+    
+function showmem(){
+    member.classList.add("membervsb")
+}
+function flipm1(){
+m1f.classList.add("menu1flip");
+m1f.onclick = flipm1close ;
+}
+function flipm2(){
+m2f.classList.add("menu2flip");
+m2f.onclick = flipm2close ;
+}
+function flipm3(){
+m3f.classList.add("menu3flip");
+m3f.onclick = flipm3close ;
+}
+function kramcolor(){
+    wrappercl.classList.add("wrappermainkram");
+}
+function kramcolorout(){
+    wrappercl.classList.remove("wrappermainkram");
+}
+function notcolor(){
+    wrappercl.classList.add("wrappermainnot");
+}
+function notcolorout(){
+    wrappercl.classList.remove("wrappermainnot");
+}
+function inkcolor(){
+    wrappercl.classList.add("wrappermainink");
+}
+function inkcolorout(){
+    wrappercl.classList.remove("wrappermainink");
+}
+function flipm1close(){
+    
+m1f.classList.remove("menu1flip");
+m1f.onclick = flipm1 ;
+}
+function flipm2close(){
+    
+    m2f.classList.remove("menu2flip");
+    m2f.onclick = flipm2 ;
+    }
+function flipm3close(){
+    m3f.classList.remove("menu3flip");
+    m3f.onclick = flipm3 ;
+    }
+function topcp(){
+m1f.classList.add("gone");
+m2f.classList.add("gone");
+m3f.classList.add("gone");
+ms1f.classList.add("gone");
+ms2f.classList.add("gone");
+ms3f.classList.add("gone");
+mt.innerHTML = "กำลังไปที่คราม..";
+mp1.classList.add("pay1vsb");
+setTimeout(() => {
+    mt.innerHTML = "กำลังไปที่คราม...";
+      }, 1000);
+      setTimeout(() => {
+    mt.innerHTML = "กำลังไปที่คราม....";
+      }, 2000);
+setTimeout(() => {
+    window.location.href = 'Kram/test.html';
+      }, 3000);
+}
+function tocook(){
+    mp3.classList.add("pmcheckvs");
+    setTimeout(() => {
+        pmst.innerHTML = "กำลังยืนยันการชำระเงิน";
+        pmst.style = "color:red;";
+      }, 1000);
+      setTimeout(() => {
+        pmst.innerHTML = "พบการชำระเงินแล้ว";
+        pmst.style = "color:red;";
+      }, 2000);
+      setTimeout(() => {
+        pmst.innerHTML = "กำลังตรวจสอบจำนวนเงิน";
+        pmst.style = "color:red;";
+      }, 4000);
+      setTimeout(() => {
+        pmst.innerHTML = "ชำระเงินเสร็จสิ้นแล้วกรุณารอสักครู่";
+        pmst.style = "color:green;";
+        ic1.src = "https://cdn.lordicon.com/cgzlioyf.json";
+      }, 5000);
+      setTimeout(() => {
+        mp3.classList.add("gone");
+        mp1.classList.add("gone");
+        mp2.classList.add("gone");
+        mt.innerHTML = "กำลังเตรียมอาหาร..";
+        mf1.classList.add("foodicvs");
+      }, 6000);
+      setTimeout(() => {
+        foodst.innerHTML = "กำลังปรุงรส";
+      }, 7000);
+      setTimeout(() => {
+        foodst.innerHTML = "กำลังอุ่นอาหาร";
+        ic2.src = "https://cdn.lordicon.com/kunpyuuw.json"
+      }, 9000);
+      setTimeout(() => {
+        foodst.innerHTML = "กำลังแพ็คอาหาร";
+        ic2.src = "https://cdn.lordicon.com/ssoifezn.json"
+      }, 12000);
+      setTimeout(() => {
+        foodst.innerHTML = "รับอาหารเลย!";
+        foodst.style = "color:green;";
+        ic2.src = "https://cdn.lordicon.com/dxlthpvq.json"
+        reload.classList.add("reloadvs");
+      }, 15000);
+}
+function opinfo1(){
+fi1.classList.add("foodinfovs");
+}
+function closeinfo1(){
+fi1.classList.remove("foodinfovs");
+}
+function opnofood(){
+nofood.classList.add("nofoodinfovs");
+}
+function closenofood(){
+    nofood.classList.remove("nofoodinfovs");
+}
+function updateClock() {
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+
+      // Add leading zero if needed
+      hours = hours < 10 ? '0' + hours : hours;
+      minutes = minutes < 10 ? '0' + minutes : minutes;
+      seconds = seconds < 10 ? '0' + seconds : seconds;
+
+      var timeString = hours + ':' + minutes + ':' + seconds;
+      document.getElementById('clock').innerHTML = timeString;
+      setTimeout(updateClock, 1000);
+    }
+    updateClock();
+
+</script>
+<script src="https://kit.fontawesome.com/b02d353d44.js" crossorigin="anonymous"></script>
