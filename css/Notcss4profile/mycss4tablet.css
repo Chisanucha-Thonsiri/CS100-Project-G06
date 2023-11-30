@@ -93,14 +93,14 @@ overflow:hidden;
         color: rgb(2, 0, 109);
     }
     .mainmenu{
-        background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
+        background-image: url(https://t3.ftcdn.net/jpg/01/73/50/18/360_F_173501808_X7zYMHQJSCZkgLkRVPmlxej0xarV06bO.jpg);
         background-repeat: no-repeat;
         background-size:1350px 100px ;
         width: 1759px;
         height: 100px;
         position:relative;
         border: 1px solid black;
-        box-shadow: 1px 1px 10px white;
+        box-shadow: 1px 1px 10px rgb(226, 136, 136);
         left:-225px;
         top:-20px;
         transform: scale(0.8);
