@@ -11,7 +11,7 @@
 <body>
     <div class="mainmenu"><span class="mainmenuct"><img class="pic1"src="pic\TU-logo.png">
         <h1 class="cstupp">OUR CSTU PASSPORT</h1>
-        <button class="bt1 selectedbt" onclick="showmem()"><strong>หน้าโฮมเพจ</strong></button>
+        <button class="bt1 selectedbt"><strong>หน้าโฮมเพจ</strong></button>
         <a href="html/myAdvisor.html" target="_self"><button class="bt2"><strong>สมาชิกทีม</strong></button></a>
         <a href="html/myActivities.html" target="_self"><button class="bt3"><strong>กิจกรรมของฉัน</strong></button></a>
         
@@ -76,8 +76,11 @@
     src="https://cdn.lordicon.com/lzgqzxrq.json"
     trigger="loop"
     style="width:60px;height:60px;position: relative;top:-1975px;left:420px;"></lord-icon>
-    <div class="welcome" id = "welcome">
-        <h1 id="welcome">WELCOME</h1></div>
+    <div class="welcome" id = "welcomediv">
+        <h1 id="welcome">WELCOME</h1>
+        <h5 id="welcome2">to our CSTU PASSPORT</h5>
+        <button class="buttongo" onclick="showmem()">TTTT</button>
+    </div>
     <div id="mp3" class="pmcheck"><strong>
         <h1>กำลังตรวจสอบสถานะการจ่ายเงิน</h1>
         <p >สถานะ:<p id="pmst">กำลังตรวจสอบ</p></p></strong>
@@ -109,9 +112,6 @@
 ราคา:69บาท
 <div class="bt but4" onclick="closeinfo1()"><i class="fa-solid fa-xmark"></i></div>
     </p></strong></div>
-
-
-
     <div id="nofood"class="nofoodinfo">
         <img src="Warningsign.png">
         <h1 >ไม่มีสินค้าในขณะนี้</h1>
@@ -146,9 +146,11 @@
     let reload = document.getElementById("reload");
     let wrappercl = document.getElementById("wrappermain");
     let member = document.getElementById("member");
+    let welcomediv = document.getElementById("welcomediv");
     
 function showmem(){
-    member.classList.add("membervsb")
+    member.classList.add("membervsb");
+    welcomediv.classList.add("gone");
 }
 function flipm1(){
 m1f.classList.add("menu1flip");
