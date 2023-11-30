@@ -278,7 +278,7 @@ overflow:hidden;
         box-shadow: 0 0 10px rgb(0, 255, 8);
         border: 1px solid black;
     }
-    .Kakao{
+    .Discord{
         height: 75px;
         width: 75px;
         position: relative;
@@ -288,9 +288,9 @@ overflow:hidden;
         transform: scale(0.8);
 
     }
-    .Kakao:hover{
+    .Discord:hover{
         transform: scale(0.9);
-        box-shadow: 0 0 10px rgb(251, 255, 0);
+        box-shadow: 0 0 10px rgb(255, 255, 255);
         border: 1px solid black;
     }
     .Email{

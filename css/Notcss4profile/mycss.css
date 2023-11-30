@@ -276,7 +276,7 @@ transform: scale(1.2);
 }
 .Discord:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 10px rgb(251, 255, 0);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
     border: 1px solid black;
 }
 .Email{
