@@ -110,14 +110,14 @@ body{
 .menu2{
     top:-252px;
     left: 520px;
-    background-image: url(https://img.kapook.com/u/2016/surauch/cOOK/clean2.jpg);
+    background-image: url('../../pic/tonnam.jpg');
     background-repeat: no-repeat;
     background-size: 250px 250px;
 }
 .menu3{
     top:-504px;
     left: 860px;
-    background-image: url(https://img.kapook.com/u/2016/surauch/cOOK/clean9.jpg);
+    background-image: url('../../pic/tonnam.jpg');
     background-repeat: no-repeat;
     background-size: 250px 250px;
 }
