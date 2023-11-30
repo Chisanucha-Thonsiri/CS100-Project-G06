@@ -409,6 +409,25 @@ background-color: rgb(13, 255, 0);
         font-size: 40px;
         color: #000000;
         position: relative;
-        top: -2000px;
+        top: -1920px;
         left: 530px;
+      }
+      .welcome{
+        position:relative;
+        
+        
+       
+      }
+      #welcome{
+        font-size: 150px;
+        top: -2000px;
+        color: rgb(0, 0, 0);
+        animation:shadowplay 5s infinite;
+      }
+      @keyframes shadowplay{
+        0% {text-shadow:none;}
+        25% {text-shadow: 8px 8px 1px pink ;}
+        50% {text-shadow: 8px 8px 1px pink,16px 16px 1px yellow;}
+        75% {text-shadow: 8px 8px 1px pink ;}
+        100% {text-shadow:none;}
       }

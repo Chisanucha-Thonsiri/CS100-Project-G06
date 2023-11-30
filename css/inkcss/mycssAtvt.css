@@ -1,17 +1,18 @@
 body{
-    background-image: url(https://i.pinimg.com/originals/56/3f/96/563f96258fc90a83b8926aae5c706006.gif);
+    background-image: url(https://media.tenor.com/m2ArosH-_ogAAAAM/space-universe.gif);
 background-repeat:no-repeat ;
-background-size:1367px 750px ;
-overflow: hidden;
+background-size:1367px 1367px ;
+overflow:hidden;
+}
+html,body{
+    width:100%;
+    height:1050px;
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
 }
 *{
     font-family: Mali;
-}
-.wrapper-main{
-    padding: 0;
-    margin: 0 auto;
-    
-    
 }
 .profilepic{
     height: 200px;
@@ -90,9 +91,7 @@ overflow: hidden;
     color: rgb(2, 0, 109);
 }
 .mainmenu{
-    background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
-    background-repeat: no-repeat;
-    background-size:1759px 100px ;
+    background-color: rgb(170, 215, 255);
     width: 1759px;
     height: 100px;
     position:relative;
@@ -438,12 +437,67 @@ transform: scale(1.2);
     position: relative;
     top:-15px;
 }
+.maininfoAtvt{
+    position: relative;
+    height: 920px;
+    width:900px;
+    background-color: rgba(240, 248, 255, 0.696);
+    border: 1px solid black;
+    border-radius: 10px;
+    top:10px;
+    left: 230px;
+    box-shadow: 0 0 10px white;
+    text-shadow: 2px 2px 2px rgb(118, 117, 117); 
+}
+.maininfoAtvt h1{
+    text-align: center;
+    background-color: yellow;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 600px;
+    position: relative;
+    left:150px;
+}
+.maininfoAtvt img{
+    width:600px;
+    height:300px;
+    position: relative;
+    left:150px;
+}
+.maininfoAtvt p{
+    position:relative;
+    left:20px;
+    top:10px;
+    line-height: 30px;
+    text-shadow: none;
+}
+.maininfoAtvt p span{
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0 5px 0 5px;
+    text-shadow: none;
+}
+.NextACT{
+    width: 60px;
+    height:60px;
+    border-radius: 60px;
+    border:1px solid black;
+    position: relative;
+    top:10px;
+    background-color: rgb(126, 255, 130);
+    left:400px;
+}
+.NextACT:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px rgb(17, 255, 0);
+    background-color: rgb(17, 255, 0);
+}
+.NextACT i{
+  font-size: 40px;
+}
 @keyframes picrotate{
     0%{ transform: rotate(-30deg);}
     50%{ transform: rotate(-35deg);}
     100%{ transform: rotate(-30deg);}
 }
-.biginfo{
-    display:none;
-}
-
