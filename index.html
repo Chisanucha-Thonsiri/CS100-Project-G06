@@ -31,7 +31,7 @@
 ชื่อจริง: <span class="bluetxt">ชิษณุชา ทนศิริ</span> <br>อายุ: <span class="bluetxt">18ปี</span><br>
 ชั้นปี: <span class="bluetxt">ปีที่ 1</span> </div>
 <div class="allbt">
-<div class="bt but1" onclick="topcp()"><i class="fa-solid fa-cart-shopping"></i></div>
+<div class="bt but1" onclick="tokram()"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
 <div class="bt but2" onclick="flipm1close()"><i class="fa-solid fa-xmark"></i></div>
 </div>
        </h3></strong>
@@ -43,7 +43,7 @@
 ชื่อจริง: <span class="bluetxt">รอ</span> <br>อายุ: <span class="bluetxt">รอ</span><br>
 ชั้นปี: <span class="bluetxt">ปีที่ 1</span> </div>
 <div class="allbt">
-<div class="bt but1" onclick="topcp()"><i class="fa-solid fa-cart-shopping"></i></div>
+<div class="bt but1" onclick="topcp()"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
 <div class="bt but2" onclick="flipm2close()"><i class="fa-solid fa-xmark"></i></div>
 </div>
        </h3></strong>
@@ -55,7 +55,7 @@
 ชื่อจริง: <span class="bluetxt">รอ</span> <br>อายุ: <span class="bluetxt">รอ</span><br>
 ชั้นปี: <span class="bluetxt">ปีที่ 1</span> </div>
 <div class="allbt">
-<div class="bt but1" onclick="topcp()"><i class="fa-solid fa-cart-shopping"></i></div>
+<div class="bt but1" onclick="tonot()"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
 <div class="bt but2" onclick="flipm3close()"><i class="fa-solid fa-xmark"></i></div>
 </div>
        </h3></strong>
@@ -79,7 +79,7 @@
     <div class="welcome" id = "welcomediv">
         <h1 id="welcome">WELCOME</h1>
         <h5 id="welcome2">to our CSTU PASSPORT</h5>
-        <button class="buttongo" onclick="showmem()">TTTT</button>
+        <button class="buttongo" onclick="showmem()"><strong>เข้าสู่เว็บไซต์</strong></button>
     </div>
     <div id="mp3" class="pmcheck"><strong>
         <h1>กำลังตรวจสอบสถานะการจ่ายเงิน</h1>
@@ -196,7 +196,7 @@ function flipm3close(){
     m3f.classList.remove("menu3flip");
     m3f.onclick = flipm3 ;
     }
-function topcp(){
+function tokram(){
 m1f.classList.add("gone");
 m2f.classList.add("gone");
 m3f.classList.add("gone");
@@ -213,6 +213,25 @@ setTimeout(() => {
       }, 2000);
 setTimeout(() => {
     window.location.href = 'Kram/test.html';
+      }, 3000);
+}
+function tonot(){
+m1f.classList.add("gone");
+m2f.classList.add("gone");
+m3f.classList.add("gone");
+ms1f.classList.add("gone");
+ms2f.classList.add("gone");
+ms3f.classList.add("gone");
+mt.innerHTML = "กำลังไปที่ต้นน้ำ..";
+mp1.classList.add("pay1vsb");
+setTimeout(() => {
+    mt.innerHTML = "กำลังไปที่ต้นน้ำ...";
+      }, 1000);
+      setTimeout(() => {
+    mt.innerHTML = "กำลังไปที่ต้นน้ำ....";
+      }, 2000);
+setTimeout(() => {
+    window.location.href = 'Not/test.html';
       }, 3000);
 }
 function tocook(){
