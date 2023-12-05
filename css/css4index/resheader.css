@@ -1,0 +1,68 @@
+@media only screen and (min-width: 993px) and (max-width: 1180px){
+.mainmenu{
+    background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
+    background-repeat: no-repeat;
+    background-size:1550px 100px ;
+    width: 1759px;
+    height: 100px;
+    position:relative;
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px white;
+    left:-225px;
+    top:-20px;
+    transform: scale(0.8);
+}
+.pic1{
+    border-radius: 60px;
+    border: 3px solid black;
+    box-shadow: 0 0 10px rgb(254, 237, 0);
+    height: 60px;
+    width: 60px;
+    position: relative;
+    left: 80px;
+    top: 20px;
+}
+.cstupp{
+    position: relative;
+    top:-60px;
+    left: 170px;
+}
+.bt1{
+    position: relative;
+    background-color: rgb(139, 139, 139);
+    width:120px;
+    top:-112px;
+    left:520px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    transform: scale(1.2);
+}
+.bt2{
+position: relative;
+width:120px;
+background-color: rgb(139, 139, 139);
+top:-112px;
+left:550px;
+border-radius: 10px;
+border: none;
+padding: 5px;
+transform: scale(1.2);
+}
+.bt3{
+position: relative;
+width:120px;
+background-color: rgb(139, 139, 139);
+top:-112px;
+left:580px;
+border-radius: 10px;
+border: none;
+padding: 5px;
+transform: scale(1.2);
+}
+.selectedbt{
+    background-color: rgb(255, 235, 55);
+}}
+@media only screen and (min-width: 993px) and (max-width: 1180px){
+    
+}

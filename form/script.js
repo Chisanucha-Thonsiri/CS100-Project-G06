@@ -23,17 +23,35 @@ const config = {
     } else {
       errorElement.textContent = ""; // Clear the error message when valid
     }
+   
+    const Meelek = /\d/.test(fullnameInput.value);
+
+    if (Meelek) {
+      errorElement.textContent = "Name should not contain any number.";
+      return false;
+    } else {
+      errorElement.textContent = ""; // Clear the error message when valid
+    }
+  
     return true;
   }
   
   // Function to validate Student ID
   function validateStudentID() {
     const studentIDInput = document.getElementById("studentID");
-    const studentIDPattern = /^\d{10}$/;
+    const studentIDPattern = /^(58|59|60|61|62|63|64|65|66)(01|02|03|04|05|06|07|08|09|10|11|12|13|14|15|16|17|18|19|20|21)\d{6}$/;
     const errorElement = document.getElementById("studentIDError");
   
     if (!studentIDPattern.test(studentIDInput.value)) {
-      errorElement.textContent = "Please enter a 10-digit Student ID.";
+      if (studentIDInput.value.length !== 10) {
+        errorElement.textContent = "Student ID must be exactly 10 digits.";
+      } else if (!/^(58|59|60|61|62|63|64|65|66)/.test(studentIDInput.value.substring(0, 2))) {
+        errorElement.textContent = "The first two digits must be between 58 and 66.";
+      } else if (!/^(01|02|03|04|05|06|07|08|09|10|11|12|13|14|15|16|17|18|19|20|21)/.test(studentIDInput.value.substring(2, 4))) {
+        errorElement.textContent = "The third and fourth digits must be between 01 and 21.";
+      } else {
+        errorElement.textContent = "Invalid Student ID.";
+      }
       return false;
     } else {
       errorElement.textContent = ""; // Clear the error message when valid
@@ -46,10 +64,18 @@ const config = {
     const emailInput = document.getElementById("email");
     const emailPattern = /^.+@dome\.tu\.ac\.th$/;
     const errorElement = document.getElementById("emailError");
+    const Meelek = /\d/.test(emailInput.value);
   
     if (!emailPattern.test(emailInput.value)) {
       errorElement.textContent =
         "Please provide a valid university email in the format 'xxx.yyy@dome.tu.ac.th'.";
+      return false;
+    } else {
+      errorElement.textContent = ""; // Clear the error message when valid
+    }
+    if (Meelek) {
+      errorElement.textContent =
+        "Please provide a valid email 'It should not contain any number!'.";
       return false;
     } else {
       errorElement.textContent = ""; // Clear the error message when valid
