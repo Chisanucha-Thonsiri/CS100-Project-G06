@@ -12,7 +12,7 @@
     <div class="mainmenu"><span class="mainmenuct"><img class="pic1"src="pic\TU-logo.png">
         <h1 class="cstupp">OUR CSTU PASSPORT</h1>
         <button class="bt1 selectedbt"><strong>หน้าโฮมเพจ</strong></button>
-        <a href="html/myAdvisor.html" target="_self"><button class="bt2"><strong>สมาชิกทีม</strong></button></a>
+        <button class="bt2" onclick="showmem()"><strong>สมาชิกทีม</strong></button>
         <a href="html/myActivities.html" target="_self"><button class="bt3"><strong>กิจกรรมของฉัน</strong></button></a>
         
     </span>
@@ -43,7 +43,7 @@
 ชื่อจริง: <span class="bluetxt">รอ</span> <br>อายุ: <span class="bluetxt">รอ</span><br>
 ชั้นปี: <span class="bluetxt">ปีที่ 1</span> </div>
 <div class="allbt">
-<div class="bt but1" onclick="topcp()"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+<div class="bt but1" onclick="toink()"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
 <div class="bt but2" onclick="flipm2close()"><i class="fa-solid fa-xmark"></i></div>
 </div>
        </h3></strong>
@@ -234,6 +234,25 @@ setTimeout(() => {
     window.location.href = 'Not/test.html';
       }, 3000);
 }
+function toink(){
+m1f.classList.add("gone");
+m2f.classList.add("gone");
+m3f.classList.add("gone");
+ms1f.classList.add("gone");
+ms2f.classList.add("gone");
+ms3f.classList.add("gone");
+mt.innerHTML = "กำลังไปที่อิ้ง..";
+mp1.classList.add("pay1vsb");
+setTimeout(() => {
+    mt.innerHTML = "กำลังไปที่อิ้ง...";
+      }, 1000);
+      setTimeout(() => {
+    mt.innerHTML = "กำลังไปที่อิ้ง....";
+      }, 2000);
+setTimeout(() => {
+    window.location.href = 'Not/test.html';
+      }, 3000);
+}
 function tocook(){
     mp3.classList.add("pmcheckvs");
     setTimeout(() => {
@@ -295,8 +314,6 @@ function updateClock() {
       var hours = now.getHours();
       var minutes = now.getMinutes();
       var seconds = now.getSeconds();
-
-      // Add leading zero if needed
       hours = hours < 10 ? '0' + hours : hours;
       minutes = minutes < 10 ? '0' + minutes : minutes;
       seconds = seconds < 10 ? '0' + seconds : seconds;
