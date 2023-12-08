@@ -33,6 +33,71 @@
             text-align: center;
             animation: flicker 5s infinite;
     }
+    .mainmenu{
+        background-image: url('../../pic/TU-background.jpg');
+        background-repeat: no-repeat;
+        background-size:1550px 100px ;
+        width: 1759px;
+        height: 100px;
+        position:relative;
+        border: 1px solid black;
+        box-shadow: 1px 1px 10px white;
+        left:-225px;
+        top:-20px;
+        transform: scale(0.8);
+    }
+    .pic1{
+        border-radius: 60px;
+        border: 3px solid black;
+        box-shadow: 0 0 10px rgb(254, 237, 0);
+        height: 60px;
+        width: 60px;
+        position: relative;
+        left: 80px;
+        top: 20px;
+    }
+    .cstupp{
+        position: relative;
+        top:-60px;
+        left: 170px;
+    }
+    .bt1{
+        position: relative;
+        background-color: rgb(139, 139, 139);
+        width:120px;
+        top:-112px;
+        left:520px;
+        border-radius: 10px;
+        border: none;
+        padding: 5px;
+        transform: scale(1.2);
+    }
+    .bt2{
+    position: relative;
+    width:120px;
+    background-color: rgb(139, 139, 139);
+    top:-112px;
+    left:550px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    transform: scale(1.2);
+    }
+    .bt3{
+    position: relative;
+    width:120px;
+    background-color: rgb(139, 139, 139);
+    top:-112px;
+    left:580px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    transform: scale(1.2);
+    }
+    .selectedbt{
+        background-color: rgb(255, 235, 55);
+    }
+    
 }
 @media only screen and (min-width: 1181px) and (max-width: 1194px){
     .wrappermain{
@@ -69,4 +134,170 @@
             text-align: center;
             animation: flicker 5s infinite;
     }
+}
+@media only screen and (min-width: 700px) and (max-width: 844px){
+    .wrappermain{
+        position: relative;
+            height: 700px;
+            width:1300px;
+            background-color: rgba(196, 255, 177, 0.696);
+            border: 3px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            left: -305px;
+            top:-90px;
+            box-shadow: 0 0 10px white;
+            transform: scale(0.7);
+            margin:0 auto;
+            padding: 0;
+            text-align: center;
+            animation: flicker 5s infinite;
+    }
+    .mainmenu{
+        background-image: url('../../pic/TU-background.jpg');
+        background-repeat: no-repeat;
+        background-size:1550px 100px ;
+        width: 1759px;
+        height: 100px;
+        position:relative;
+        border: 1px solid black;
+        box-shadow: 1px 1px 10px white;
+        left:-225px;
+        top:-20px;
+        transform: scale(0.8);
+    }
+    .pic1{
+        border-radius: 60px;
+        border: 3px solid black;
+        box-shadow: 0 0 10px rgb(254, 237, 0);
+        height: 60px;
+        width: 60px;
+        position: relative;
+        left: 80px;
+        top: 20px;
+    }
+    .cstupp{
+        position: relative;
+        top:-60px;
+        left: 170px;
+    }
+    .bt1{
+        position: relative;
+        background-color: rgb(139, 139, 139);
+        width:120px;
+        top:-112px;
+        left:520px;
+        border-radius: 10px;
+        border: none;
+        padding: 5px;
+        transform: scale(1.2);
+    }
+    .bt2{
+    position: relative;
+    width:120px;
+    background-color: rgb(139, 139, 139);
+    top:-112px;
+    left:550px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    transform: scale(1.2);
+    }
+    .bt3{
+    position: relative;
+    width:120px;
+    background-color: rgb(139, 139, 139);
+    top:-112px;
+    left:580px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    transform: scale(1.2);
+    }
+    .selectedbt{
+        background-color: rgb(255, 235, 55);
+    }
+    
+}
+@media only screen and (min-width: 500px) and (max-width: 699px){
+    .wrappermain{
+        position: relative;
+            height: 700px;
+            width:1300px;
+            background-color: rgba(196, 255, 177, 0.696);
+            border: 3px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            left: -425px;
+            top:-90px;
+            box-shadow: 0 0 10px white;
+            transform: scale(0.5);
+            margin:0 auto;
+            padding: 0;
+            text-align: center;
+            animation: flicker 5s infinite;
+    }
+    .mainmenu{
+        background-image: url('../../pic/TU-background.jpg');
+        background-repeat: no-repeat;
+        background-size:1550px 100px ;
+        width: 1759px;
+        height: 100px;
+        position:relative;
+        border: 1px solid black;
+        box-shadow: 1px 1px 10px white;
+        left:-225px;
+        top:-20px;
+        transform: scale(0.8);
+    }
+    .pic1{
+        border-radius: 60px;
+        border: 3px solid black;
+        box-shadow: 0 0 10px rgb(254, 237, 0);
+        height: 60px;
+        width: 60px;
+        position: relative;
+        left: 80px;
+        top: 20px;
+    }
+    .cstupp{
+        position: relative;
+        top:-60px;
+        left: 170px;
+    }
+    .bt1{
+        position: relative;
+        background-color: rgb(139, 139, 139);
+        width:120px;
+        top:-112px;
+        left:500px;
+        border-radius: 10px;
+        border: none;
+        padding: 5px;
+        transform: scale(0.8);
+    }
+    .bt2{
+    position: relative;
+    width:120px;
+    background-color: rgb(139, 139, 139);
+    top:-112px;
+    left:480px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    transform: scale(0.8);
+    }
+    .bt3{
+    position: relative;
+    width:120px;
+    background-color: rgb(139, 139, 139);
+    top:-112px;
+    left:460px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    transform: scale(0.8);
+    }
+    .selectedbt{
+        background-color: rgb(255, 235, 55);
+    }
+    
 }
