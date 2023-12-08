@@ -197,7 +197,7 @@ const config = {
       console.error("An error occurred while submitting form data:", error);
     }
   }
-  
+  const submitinfo = document.getElementById("infoDisplayContainer");
   // Event listener for form submission
   document.getElementById("myForm").addEventListener("submit", submitForm);
   
@@ -207,3 +207,48 @@ const config = {
     .getElementById("studentID")
     .addEventListener("input", validateStudentID);
   document.getElementById("email").addEventListener("input", validateEmail);
+  document.addEventListener("DOMContentLoaded", function () {
+    // Your existing code
+  
+    const infoDisplayContainer = document.getElementById("infoDisplayContainer");
+    const displayedInfo = document.getElementById("displayedInfo");
+  
+    const myForm = document.getElementById("myForm");
+  
+    myForm.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the form from submitting normally
+  
+      // Get form data
+      const formData = new FormData(myForm);
+      const formObject = {};
+      formData.forEach((value, key) => {
+        formObject[key] = value;
+      });
+  
+      // Build HTML to display the information
+      const infoHTML = `
+        <h3>Submitted Information:</h3>
+        <p><strong>Full Name:</strong> ${formObject.fullname}</p>
+        <p><strong>Student ID:</strong> ${formObject.studentID}</p>
+        <p><strong>Email:</strong> ${formObject.email}</p>
+        <p><strong>Work/Activity Title:</strong> ${formObject.workTitle}</p>
+        <p><strong>Type of Work/Activity:</strong> ${formObject.activityType}</p>
+        <p><strong>Academic Year:</strong> ${formObject.academicYear}</p>
+        <p><strong>Semester:</strong> ${formObject.semester}</p>
+        <p><strong>Start Date/Time:</strong> ${formObject.startDate}</p>
+        <p><strong>End Date/Time:</strong> ${formObject.endDate}</p>
+        <p><strong>Location:</strong> ${formObject.location}</p>
+        <p><strong>Description:</strong> ${formObject.description}</p>
+      `;
+  
+      // Update the displayed information container
+      displayedInfo.innerHTML = infoHTML;
+      
+
+      
+  
+      // Show the information display container
+      infoDisplayContainer.style.display = "block";
+    });
+  });
+  
