@@ -7,7 +7,7 @@
         overflow-x: hidden;
     }
     body{
-        background-image: url(https://i.pinimg.com/originals/56/3f/96/563f96258fc90a83b8926aae5c706006.gif);
+        background-image: url(https://media3.giphy.com/media/3o7qE8TcxvLxDGPBmM/200w.webp?cid=ecf05e47yystcbpyhia431vefbnuupdh5x5gaktgm9vlkgsf&ep=v1_gifs_search&rid=200w.webp&ct=g);
     background-repeat:no-repeat ;
     background-size:840px 1180px ;
 }
@@ -96,14 +96,14 @@
         color: rgb(2, 0, 109);
     }
     .mainmenu{
-        background-image: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
+        background-image: url(https://t3.ftcdn.net/jpg/01/73/50/18/360_F_173501808_X7zYMHQJSCZkgLkRVPmlxej0xarV06bO.jpg);
         background-repeat: no-repeat;
         background-size:1550px 100px ;
         width: 1759px;
         height: 100px;
         position:relative;
         border: 1px solid black;
-        box-shadow: 1px 1px 10px white;
+        box-shadow: 1px 1px 10px rgb(226, 136, 136);
         left:-225px;
         top:-20px;
         transform: scale(0.8);
@@ -134,7 +134,7 @@
         background-color: rgb(139, 139, 139);
         width:120px;
         top:-112px;
-        left:420px;
+        left:430px;
         border-radius: 10px;
         border: none;
         padding: 5px;
@@ -145,7 +145,7 @@
     width:120px;
     background-color: rgb(139, 139, 139);
     top:-112px;
-    left:420px;
+    left:440px;
     border-radius: 10px;
     border: none;
     padding: 5px;
@@ -156,7 +156,7 @@
     width:120px;
     background-color: rgb(139, 139, 139);
     top:-112px;
-    left:420px;
+    left:450px;
     border-radius: 10px;
     border: none;
     padding: 5px;
@@ -287,7 +287,7 @@
         box-shadow: 0 0 10px rgb(0, 255, 8);
         border: 1px solid black;
     }
-    .Kakao{
+    .Discord{
         height: 75px;
         width: 75px;
         position: relative;
@@ -297,9 +297,9 @@
         transform: scale(0.8);
 
     }
-    .Kakao:hover{
+    .Discord:hover{
         transform: scale(0.9);
-        box-shadow: 0 0 10px rgb(251, 255, 0);
+        box-shadow: 0 0 10px rgb(255, 255, 255);
         border: 1px solid black;
     }
     .Email{

@@ -15,7 +15,7 @@
         <h1 class="cstupp">OUR CSTU PASSPORT</h1>
         <button class="bt1 selectedbt"><strong>หน้าโฮมเพจ</strong></button>
         <button class="bt2" onclick="showmem()"><strong>สมาชิกทีม</strong></button>
-        <a href="html/myActivities.html" target="_self"><button class="bt3"><strong>กิจกรรมของฉัน</strong></button></a>
+        <a href="form\form.html" target="_self"><button class="bt3"><strong>กิจกรรมของฉัน</strong></button></a>
         
     </span>
 <div class="wrappermain" id="wrappermain">
@@ -42,7 +42,7 @@
         <h1>อิ้ง</h1>
         <div class="sub-info">
        <strong> <h3>
-ชื่อจริง: <span class="bluetxt">รอ</span> <br>อายุ: <span class="bluetxt">รอ</span><br>
+ชื่อจริง: <span class="bluetxt">พันธนา บุราณรัตน์</span> <br>อายุ: <span class="bluetxt">18ปี</span><br>
 ชั้นปี: <span class="bluetxt">ปีที่ 1</span> </div>
 <div class="allbt">
 <div class="bt but1" onclick="toink()"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
@@ -54,7 +54,7 @@
         <h1>ต้นน้ำ</h1>
         <div class="sub-info">
        <strong> <h3>
-ชื่อจริง: <span class="bluetxt">รอ</span> <br>อายุ: <span class="bluetxt">รอ</span><br>
+ชื่อจริง: <span class="bluetxt">ขวัญชาติ ทิพย์ดวง</span> <br>อายุ: <span class="bluetxt">18ปี</span><br>
 ชั้นปี: <span class="bluetxt">ปีที่ 1</span> </div>
 <div class="allbt">
 <div class="bt but1" onclick="tonot()"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
@@ -254,62 +254,6 @@ setTimeout(() => {
 setTimeout(() => {
     window.location.href = 'Ink/test2.html';
       }, 3000);
-}
-function tocook(){
-    mp3.classList.add("pmcheckvs");
-    setTimeout(() => {
-        pmst.innerHTML = "กำลังยืนยันการชำระเงิน";
-        pmst.style = "color:red;";
-      }, 1000);
-      setTimeout(() => {
-        pmst.innerHTML = "พบการชำระเงินแล้ว";
-        pmst.style = "color:red;";
-      }, 2000);
-      setTimeout(() => {
-        pmst.innerHTML = "กำลังตรวจสอบจำนวนเงิน";
-        pmst.style = "color:red;";
-      }, 4000);
-      setTimeout(() => {
-        pmst.innerHTML = "ชำระเงินเสร็จสิ้นแล้วกรุณารอสักครู่";
-        pmst.style = "color:green;";
-        ic1.src = "https://cdn.lordicon.com/cgzlioyf.json";
-      }, 5000);
-      setTimeout(() => {
-        mp3.classList.add("gone");
-        mp1.classList.add("gone");
-        mp2.classList.add("gone");
-        mt.innerHTML = "กำลังเตรียมอาหาร..";
-        mf1.classList.add("foodicvs");
-      }, 6000);
-      setTimeout(() => {
-        foodst.innerHTML = "กำลังปรุงรส";
-      }, 7000);
-      setTimeout(() => {
-        foodst.innerHTML = "กำลังอุ่นอาหาร";
-        ic2.src = "https://cdn.lordicon.com/kunpyuuw.json"
-      }, 9000);
-      setTimeout(() => {
-        foodst.innerHTML = "กำลังแพ็คอาหาร";
-        ic2.src = "https://cdn.lordicon.com/ssoifezn.json"
-      }, 12000);
-      setTimeout(() => {
-        foodst.innerHTML = "รับอาหารเลย!";
-        foodst.style = "color:green;";
-        ic2.src = "https://cdn.lordicon.com/dxlthpvq.json"
-        reload.classList.add("reloadvs");
-      }, 15000);
-}
-function opinfo1(){
-fi1.classList.add("foodinfovs");
-}
-function closeinfo1(){
-fi1.classList.remove("foodinfovs");
-}
-function opnofood(){
-nofood.classList.add("nofoodinfovs");
-}
-function closenofood(){
-    nofood.classList.remove("nofoodinfovs");
 }
 function updateClock() {
       var now = new Date();
