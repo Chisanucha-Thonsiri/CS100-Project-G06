@@ -126,7 +126,6 @@ const config = {
   });
   
   // Function to submit the form
-  // Function to submit the form
   async function submitForm(event) {
     event.preventDefault();
   
