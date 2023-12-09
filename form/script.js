@@ -93,7 +93,7 @@ const config = {
   // Function to fetch activity types from the backend
 async function fetchActivityTypes() {
   try {
-    const response = await fetch(`http://${window.location.hostname}:${port}/getActivityType`);
+    const response = await fetch('http://${window.location.hostname}:${port}/getActivityType');
     if (response.ok) {
       const data = await response.json();
       return data;
