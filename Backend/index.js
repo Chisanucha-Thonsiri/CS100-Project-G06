@@ -1,3 +1,11 @@
+// ========================================================================
+// File: index.js
+// Author: CS100 Team
+// Date Created: 03 August 2023
+// Copyright: CSTU
+// Description: CSTU Passport API
+// ========================================================================
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -5,7 +13,6 @@ const fs = require('fs');
 
 const app = express();
 const port = 8000;
-
 
 // Use the cors middleware
 app.use(cors());
