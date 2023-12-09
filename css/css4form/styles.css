@@ -100,4 +100,29 @@ body {
   .invi{
     opacity: 0;
   }
-  
+  #infoDisplayContainer{
+    display: none;
+  }
+  #infoDisplayContainer h2{
+   text-align: center;
+  }
+  .highlight{
+     color: rgb(8, 0, 255);
+  }
+  #submitnoti{
+    transition: transform 0.5s,top 0.5s;
+    position: fixed;
+    top: 175px;
+    left: 575px;
+    transform: scale(0.0000000001);
+  }
+  #submitnoti h2{
+   text-align: center;
+  }
+  #submitnoti lord-icon{
+    position: relative;
+    left: 40px;
+  }
+  .appear{
+    transform: scale(1);
+  }

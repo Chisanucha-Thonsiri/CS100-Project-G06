@@ -344,25 +344,6 @@ background-color: rgb(13, 255, 0);
             box-shadow: none;
         }
     }
-    .watermark{
-        position: relative;
-        top:-2610px;
-        left:-220px;
-        transform: scale(0.8);
-        z-index: -2;
-    }
-    .watermark img{
-        top:-2500px;
-
-        width: 70px ;
-        height: 70px;
-        border-radius: 360px;
-    }
-    .watermark h1{
-        top:-80px;
-        left: 300px;
-        position: relative;
-    }
     .member{
         position: relative;
         z-index: -99;
