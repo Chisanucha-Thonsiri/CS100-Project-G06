@@ -12,6 +12,8 @@ const cors = require('cors');
 const fs = require('fs');
 
 const app = express();
+const port = 8000;
+
 
 // Use the cors middleware
 app.use(cors());
