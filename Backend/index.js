@@ -114,7 +114,7 @@ const validateDates = (academicYear, semester, startDate, endDate) => {
 
 // GET endpoint to retrieve activity types from 'activityType.json' file
 app.get('/getActivityType', (req, res) => {
-    fs.readFile('databases/activityType.json', 'utf8', (err, data) => {
+    fs.readFile('../databases/activityType.json', 'utf8', (err, data) => {
       if (err) {
         console.error('Error reading activityType.json:', err);
         return res.status(500).json({ error: 'Internal server error' });
