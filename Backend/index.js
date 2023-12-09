@@ -1,10 +1,3 @@
-// ========================================================================
-// File: index.js
-// Author: CS100 Team
-// Date Created: 03 August 2023
-// Copyright: CSTU
-// Description: CSTU Passport API
-// ========================================================================
 
 const express = require('express');
 const bodyParser = require('body-parser');
