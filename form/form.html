@@ -53,10 +53,11 @@
         <input type="text" id="workTitle" name="workTitle" />
       </div>
 
+ 
       <!-- Type of Work/Activity Field -->
       <div class="form-group">
-        <label for="activityType">Type of Work/Activity</label>
-        <select id="activityType" name="activityType">
+        <label for="activityType">Type of Work/Activity <span class="required">*</span></label>
+        <select id="activityType" name="activityType" required>
           <option value="" disabled selected>Select an option</option>
           <option value="Course">Course</option>
           <option value="Activity">Activity</option>
@@ -96,18 +97,17 @@
         </select>
       </div>
 
-      <!-- Start Date/Time Field -->
-      <div class="form-group">
-        <label for="startDate">Start Date/Time</label>
-        <input type="datetime-local" id="startDate" name="startDate" />
-      </div>
+    <!-- Start Date/Time Field -->
+    <div class="form-group">
+      <label for="startDate">Start Date/Time <span class="required">*</span></label>
+      <input type="datetime-local" id="startDate" name="startDate" required />
+    </div>
 
-      <!-- End Date/Time Field -->
-      <div class="form-group">
-        <label for="endDate">End Date/Time</label>
-        <input type="datetime-local" id="endDate" name="endDate" />
-      </div>
-
+    <!-- End Date/Time Field -->
+    <div class="form-group">
+      <label for="endDate">End Date/Time <span class="required">*</span></label>
+      <input type="datetime-local" id="endDate" name="endDate" required />
+    </div>
       <!-- Location Field -->
       <div class="form-group">
         <label for="location">Location</label>
@@ -120,10 +120,10 @@
         <textarea id="description" name="description" rows="4"></textarea>
       </div>
 
-      <!-- Submit Button -->
-      <div class="form-group">
-        <input type="submit" value="Submit" onclick="submittedlawja()" />
-      </div>
+         <!-- Submit Button -->
+         <div class="form-group">
+          <input type="submit" value="Submit" />
+        </div>
     </form>
   </div>
 
