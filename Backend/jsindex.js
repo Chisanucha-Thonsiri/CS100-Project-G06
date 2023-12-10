@@ -84,7 +84,7 @@ mt.innerHTML = "กำลังไปที่คราม...";
 mt.innerHTML = "กำลังไปที่คราม....";
   }, 2000);
 setTimeout(() => {
-window.location.href = 'Kram/test.html';
+window.location.href = 'Kram/Kram.html';
   }, 3000);
 }
 function tonot(){
@@ -103,7 +103,7 @@ mt.innerHTML = "กำลังไปที่ต้นน้ำ...";
 mt.innerHTML = "กำลังไปที่ต้นน้ำ....";
   }, 2000);
 setTimeout(() => {
-window.location.href = 'Not/test.html';
+window.location.href = 'Not/Not.html';
   }, 3000);
 }
 function toink(){
@@ -122,7 +122,7 @@ mt.innerHTML = "กำลังไปที่อิ้ง...";
 mt.innerHTML = "กำลังไปที่อิ้ง....";
   }, 2000);
 setTimeout(() => {
-window.location.href = 'Ink/test2.html';
+window.location.href = 'Ink/Ink.html';
   }, 3000);
 }
 function updateClock() {
