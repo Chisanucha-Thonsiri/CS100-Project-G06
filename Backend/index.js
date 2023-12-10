@@ -80,36 +80,74 @@ app.post('/record', (req, res) => {
 
 // Function to validate provided start and end dates
 // It checks if the dates are within the bounds of the academic calendar
-const validateDates = (academicYear, semester, startDate, endDate) => {
-    try {
-      const calendarData = fs.readFileSync('databases/calendar.json');
-      const calendars = JSON.parse(calendarData);
+const validateDatesWithCalendar = (academicYear, semester, startDate, endDate) => {
+  try {
+    const calendars = {
+      "2022": [
+        {
+          "semester": 1,
+          "start_date": "2022-08-08T00:00:00",
+          "end_date": "2022-11-26T23:59:59"
+        },
+        {
+          "semester": 2,
+          "start_date": "2023-01-09T00:00:00",
+          "end_date": "2023-05-06T23:59:59"
+        },
+        {
+          "semester": 3,
+          "start_date": "2023-06-12T00:00:00",
+          "end_date": "2023-07-20T23:59:59"
+        }
+      ],
+      "2023": [
+        {
+          "semester": 1,
+          "start_date": "2023-08-15T00:00:00",
+          "end_date": "2023-12-04T23:59:59"
+        },
+        {
+          "semester": 2,
+          "start_date": "2024-01-08T00:00:00",
+          "end_date": "2024-05-04T23:59:59"
+        },
+        {
+          "semester": 3,
+          "start_date": "2024-06-10T00:00:00",
+          "end_date": "2024-07-18T23:59:59"
+        }
+      ]
+    };
 
-      const yearData = calendars[academicYear];
-      if (!yearData) {
-        return 'Academic year not found in calendar.';
-      }
-  
-      const semesterData = yearData.find(s => s.semester === semester);
-      if (!semesterData) {
-        return 'Semester not found in calendar.';
-      }
-  
-      const calendarStartDate = new Date(semesterData.start_date);
-      const calendarEndDate = new Date(semesterData.end_date);
-      const clientStartDate = new Date(startDate);
-      const clientEndDate = new Date(endDate);
-  
-      if (clientStartDate < calendarStartDate || clientEndDate > calendarEndDate) {
-        return 'Client dates are outside the calendar semester dates.';
-      }
-  
-      return null;
-    } catch (err) {
-      console.error('Error reading or parsing calendar.json:', err);
-      return 'Internal server error';
+    const yearData = calendars[academicYear];
+    if (!yearData) {
+      return 'Academic year not found in calendar.';
     }
+
+    const semesterData = yearData.find(s => s.semester === semester);
+    if (!semesterData) {
+      return 'Semester not found in calendar.';
+    }
+
+    const calendarStartDate = new Date(semesterData.start_date);
+    const calendarEndDate = new Date(semesterData.end_date);
+    const clientStartDate = new Date(startDate);
+    const clientEndDate = new Date(endDate);
+
+    if (clientStartDate < calendarStartDate || clientEndDate > calendarEndDate) {
+      return 'Client dates are outside the calendar semester dates.';
+    }
+
+    return null;
+  } catch (err) {
+    console.error('Error parsing calendar data:', err);
+    return 'Internal server error';
+  }
 };
+
+// Example usage:
+const validationResult = validateDatesWithCalendar("2023", 1, "2023-09-01T00:00:00", "2023-12-01T23:59:59");
+console.log(validationResult);
 
 // GET endpoint to retrieve activity types from 'activityType.json' file
 app.get('/getActivityType', (req, res) => {

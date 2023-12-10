@@ -6,9 +6,6 @@
 <link rel="stylesheet" href="css\css4index\header.css">
 <link rel="stylesheet" href="css\css4index\indexcss4ipad.css">
 <link rel="stylesheet" href="css\css4index\indexcss4ipad.css">
-<link rel="stylesheet" href="vdmipadpro.css">
-<link rel="stylesheet" href="vdmipadgen.css">
-<link rel="stylesheet" href="vdmiphone.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mali">
 </head>
 <body>
@@ -84,52 +81,10 @@
         <h5 id="welcome2">to our CSTU PASSPORT</h5>
         <button class="buttongo" onclick="showmem()"><strong>เข้าสู่เว็บไซต์</strong></button>
     </div>
-    <div id="mp3" class="pmcheck"><strong>
-        <h1>กำลังตรวจสอบสถานะการจ่ายเงิน</h1>
-        <p >สถานะ:<p id="pmst">กำลังตรวจสอบ</p></p></strong>
-        <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
-        <lord-icon id="ic1"
-            src="https://cdn.lordicon.com/unukghxb.json"
-            trigger="loop"
-            delay="500"
-            style="width:150px;height:150px">
-        </lord-icon>
-    </div></div>
-    <div  id="mf1"class="menusl foodic">
-
-        <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
-<lord-icon id="ic2"
-    src="https://cdn.lordicon.com/mhddipcx.json"
-    trigger="loop"
-    delay="500"
-    style="width:150px;height:150px">
-</lord-icon>
-<h1 id="foodst" style="color: blue; font-size: 25px;">กำลังเตรียมวัตถุดิบ</h1>
-    </div>
-    <div id="fi1"class="foodinfo">
-    <img src="https://s.isanook.com/wo/0/ud/10/51845/3.jpg?ip/resize/w728/q80/jpg" alt="">
-    <h1>ข้าวผัดผักคลีน</h1>
-    <strong>
-    <p style="color: blue;">
-ข้าวผัดผักคลีนที่ลดไขมันจำนวนมหาศาลเหมาะกับผู้ที่<br>กำลังลดน้ำหนัก อิสลามก็ทานได้ ราคาย่อมเยาว์<br>
-ราคา:69บาท
-<div class="bt but4" onclick="closeinfo1()"><i class="fa-solid fa-xmark"></i></div>
-    </p></strong></div>
-    <div id="nofood"class="nofoodinfo">
-        <img src="Warningsign.png">
-        <h1 >ไม่มีสินค้าในขณะนี้</h1>
-        <strong>
-        <p style="color: blue;">
-    สินค้ายังไม่พร้อมให้บริการขณะนี้ แต่จะพร้อมให้บริการเร็วๆนี้ <br>ขออภัยในความไม่สะดวก
-    <div class="bt but5" onclick="closenofood()"><i class="fa-solid fa-xmark"></i></div>
-        </p></strong></div>
-        <button id="reload" class="reload"onClick="window.location.reload();"><strong>รับสินค้า</strong></button>
-    </div>
-</lord-icon>
 </div>
 </body>
-<script>
-    let mt = document.getElementById("maintxt");
+<script src="Backend\jsindex.js">
+   /* let mt = document.getElementById("maintxt");
     let m1f = document.getElementById("m1");
     let m2f = document.getElementById("m2");
     let m3f = document.getElementById("m3");
@@ -269,7 +224,7 @@ function updateClock() {
       document.getElementById('clock').innerHTML = timeString;
       setTimeout(updateClock, 1000);
     }
-    updateClock();
+    updateClock();*/
 
 </script>
 <script src="https://kit.fontawesome.com/b02d353d44.js" crossorigin="anonymous"></script>

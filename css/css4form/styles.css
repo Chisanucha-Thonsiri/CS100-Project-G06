@@ -126,3 +126,6 @@ body {
   .appear{
     transform: scale(1);
   }
+  .required{
+    color: red;
+  }
